@@ -9,3 +9,11 @@ Background - on *BSD and MacOSX using normal 'cat' of a
 serial device (re)sets the terminal settings back to the
 default; so you need to do a 'stty -F ..' each time 
 after opening. 
+
+# Usage
+
+Example use
+
+     scat /dev/cu.usb-serial0001 115200
+
+
