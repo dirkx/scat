@@ -25,7 +25,12 @@ or, for non default baudrates:
 
 Or when you want to re-connect straight after an upload
 
-     arduino-cli upload --port /dev/cu.usbserial-0001 --fqbn esp32:esp32:esp32wrover Blink && scat  /dev/cu.usbserial-0001 9600
+     arduino-cli upload --port /dev/cu.usbserial-0001 \
+              --fqbn esp32:esp32:esp32wrover Blink && \
+                  scat  /dev/cu.usbserial-0001 9600
+
+I.e. attempt an upload and connect to the serial straight
+afterwards if that was succesful.
 
 # Compiling
 
