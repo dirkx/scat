@@ -16,4 +16,7 @@ Example use
 
      scat /dev/cu.usb-serial0001 115200
 
+Or when you want to re-connect straight after an upload
+
+     arduino-cli upload --port /dev/cu.usbserial-0001 --fqbn esp32:esp32:esp32wrover Blink && scat  /dev/cu.usbserial-0001 9600
 
