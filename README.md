@@ -20,3 +20,16 @@ Or when you want to re-connect straight after an upload
 
      arduino-cli upload --port /dev/cu.usbserial-0001 --fqbn esp32:esp32:esp32wrover Blink && scat  /dev/cu.usbserial-0001 9600
 
+# Compiling
+
+Typically use something like
+
+     clang -o scat ./scat.c
+
+or
+
+     gcc -o scat ./scat.c
+
+or
+
+     cc -o scat ./scat.c
